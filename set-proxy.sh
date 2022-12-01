@@ -24,7 +24,7 @@ EOF
 
 systemctl daemon-reload
 #可修改订阅地址【https://acl4ssr-sub.github.io/】
-wget -O /etc/clash/config.yaml https://suo.yt/olkYofI
+wget -O /etc/clash/config.yaml $1
 
 cat>/etc/profile.d/proxy.sh<<EOF
 export http_proxy="127.0.0.1:7890"
